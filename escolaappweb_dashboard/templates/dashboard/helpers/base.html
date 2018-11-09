@@ -1,0 +1,29 @@
+{# base do html #}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block titulo %}
+            <title>EscolaApp</title>
+        {% endblock %}
+    </head>
+    <body>
+        <nav>
+            {% block nav %}
+                default nav
+            {% endblock %}
+        </nav>
+        <main>
+            {% block conteudo %}
+                <b>bloco padrao</b>
+            {% endblock %}
+        </main>
+        <footer>
+            {% block footer %}
+                default footer
+            {% endblock %}
+        </footer>
+    </body>
+    {% block scripts %}
+        default script
+    {% endblock %}
+</html
