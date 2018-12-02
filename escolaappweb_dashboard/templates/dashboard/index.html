@@ -1,5 +1,11 @@
 {% extends "dashboard/helpers/base.html" %}
 {% block conteudo %}
-    Hello!    
+    <h1>Esta é a primeira tela do dashboard!</h1>
+
+    {# forms de logout #}
+    <form method="POST" action="{% url 'accounts:logout' %}">
+        {% csrf_token %}
+        <input value="Logout" type="submit"> 
+    </form>
 {% endblock %}
 

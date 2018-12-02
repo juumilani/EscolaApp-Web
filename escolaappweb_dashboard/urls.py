@@ -1,4 +1,3 @@
-from .apps import EscolaappwebDashboardConfig
 from django.urls import path
 from escolaappweb_dashboard import views
 
