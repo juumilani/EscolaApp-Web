@@ -20,4 +20,5 @@ from django.conf.urls import include
 urlpatterns = [
     path('', include('escolaappweb_dashboard.urls', namespace='dashboard')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls', namespace='accounts'))
 ]
