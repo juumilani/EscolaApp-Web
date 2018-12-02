@@ -1,0 +1,114 @@
+{% extends "dashboard/helpers/base.html" %}
+{% block conteudo %}
+<div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Painel de Controle</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="index.html">Painel de Controle</a></li>
+                            <li class="active">Cadastrar Aluno</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+
+
+                <div class="row">
+
+        <!-- Form de Cadastro -->
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong>CADASTRAR ALUNO</strong>
+                </div>
+                <div class="card-body card-block">
+                    <form action="" method="post" class="form-horizontal">
+                                 <!-- Nome do aluno -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label for="text-input" class=" form-control-label"><b>Nome</b></label></div>
+                            <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Insira aqui o nome do aluno" class="form-control"><small class="form-text text-muted"></small></div>
+                        </div>
+                        <!-- Fim nome do aluno -->
+
+                        <!-- Nome do responsável -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label for="text-input" class=" form-control-label"><b>Responsável</b></label></div>
+                            <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Insira aqui o nome do responsável" class="form-control"><small class="form-text text-muted"></small></div>
+                        </div>
+                        <!-- Fim nome do responsável -->
+
+                        <!-- ID do aluno -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label class=" form-control-label"><b>ID</b></label></div>
+                            <div class="col-12 col-md-9">
+                                <p class="form-control-static">789456</p>
+                            </div>
+                        </div>
+                        <!-- Fim do ID -->
+
+                        <!-- Senha gerada do aluno -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label class=" form-control-label"><b>Senha</b></label></div>
+                            <div class="col-12 col-md-9">
+                                <p class="form-control-static">ab123</p>
+                            </div>
+                        </div>
+                        <!-- Fim da senha -->
+
+                        <!-- E-mail do responsável -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label for="email-input" class=" form-control-label"><b>E-mail</b></label></div>
+                            <div class="col-12 col-md-9"><input type="email" id="email-input" name="email-input" placeholder="Insira o e-mail do responsável" class="form-control"><small class="help-block form-text">Os avisos necessários serão enviados para este e-mail</small></div>
+                        </div>
+                        <!-- Fim do e-mail -->
+
+                        <!-- Escolha de urma -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label for="select" class=" form-control-label"><b>Turma</b></label></div>
+                            <div class="col-12 col-md-9">
+                                <select name="select" id="select" class="form-control">
+                                    <option value="0">Escolha a Turma</option>
+                                    <option value="1">6º Ano</option>
+                                    <option value="2">7º Ano</option>
+                                    <option value="3">8º Ano</option>
+                                    <option value="3">9º Ano</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Fim da escolha de turma -->
+
+                        <!-- Observações -->
+                        <div class="row form-group">
+                            <div class="col col-lg-2"><label for="textarea-input" class=" form-control-label"><b>Observações</b></label></div>
+                            <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Escreva aqui as observações sobre esse aluno" class="form-control"></textarea></div>
+                        </div>
+                        <!-- Fim das observações -->
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-success btn-sm">
+                            <i class="fa fa-dot-circle-o"></i> Submit
+                        </button>
+                        <button type="reset" class="btn btn-danger btn-sm">
+                            <i class="fa fa-ban"></i> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do formulário -->
+    </div><!-- .animated -->
+</div>
+<!-- Fim do conteúdo -->
+{% endblock %}
